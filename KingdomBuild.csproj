@@ -303,7 +303,11 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\Movement.cs" />
+    <Compile Include="Assets\Scripts\AttackerManager.cs" />
+    <Compile Include="Assets\Scripts\AttackerMovement.cs" />
+    <Compile Include="Assets\Scripts\CharacterManager.cs" />
+    <Compile Include="Assets\Scripts\DefenderManager.cs" />
+    <Compile Include="Assets\Scripts\DefenderMovement.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="C:\Users\hercu\AppData\Local\Unity\cache\packages\packages.unity.com\com.unity.package-manager-ui@1.8.8\Editor\Resources\Styles\Main_Dark.uss" />

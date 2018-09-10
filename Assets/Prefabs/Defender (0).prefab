@@ -37,7 +37,7 @@ GameObject:
   - component: {fileID: 4475962344803596}
   m_Layer: 0
   m_Name: Defender (0)
-  m_TagString: Untagged
+  m_TagString: Defender
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
