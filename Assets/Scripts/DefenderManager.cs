@@ -6,6 +6,9 @@ public class DefenderManager : CharacterManager {
 
     private DefenderMovement defMove;
 
+    [SerializeField] private float dispelTime;
+    [SerializeField] private float elapsedTime;
+
     private void Awake(){
 
         defMove = this.gameObject.GetComponent<DefenderMovement>();
@@ -17,6 +20,17 @@ public class DefenderManager : CharacterManager {
 	
 	// Update is called once per frame
 	void Update () {
-		
+        if (defMove.IsPlaced) UpdateTimer();
 	}
+
+    void UpdateTimer() {
+        if (elapsedTime < dispelTime) elapsedTime += Time.deltaTime;
+        else Dispel();
+    }
+
+    public void Dispel() {
+        defMove.Dispel();
+        elapsedTime = 0;
+    }
+
 }

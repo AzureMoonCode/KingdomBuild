@@ -6,11 +6,12 @@ public class AttackerMovement : MonoBehaviour {
 
     Transform location;
     AttackerManager charMan;
-    [SerializeField] float velocity;
+    float velocity;
 
     void Awake() {
         location = this.gameObject.transform;
         charMan = this.gameObject.GetComponent<AttackerManager>();
+        velocity = charMan.Speed;
     }
     // Use this for initialization
     void Start () {
